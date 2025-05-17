@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas Copilot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+</style>
+<body>
+    <header>
+        <h1>Finanzas Copilot</h1>
+        <nav>
+            <ul>
+                <li><a href="#cotizaciones">Cotizaciones</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#graficos">Gráficos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cotizaciones">
+            <h2>Cotizaciones del dólar</h2>
+            <p>Dólar Blue: <span id="dolarBlue">Cargando...</span></p>
+            <p>Dólar Oficial: <span id="dolarOficial">Cargando...</span></p>
+        </section>
+
+        <section id="noticias">
+            <h2>Últimas Noticias</h2>
+            <article>
+                <h3>📈 Inflación y mercados financieros</h3>
+                <p>La inflación sigue afectando la economía y los mercados reaccionan...</p>
+            </article>
+        </section>
+
+        <section id="graficos">
+            <h2>Tendencias del dólar</h2>
+            <canvas id="graficoDolar"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Finanzas Copilot - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
