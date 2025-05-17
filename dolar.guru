@@ -257,7 +257,24 @@
           </div>
         </header>
 
+        <!-- /////////////////////////////////////////ZONA PRINCIPAL///////////////////////////////////////// -->
+        <!-- Pestañas -->
+        <div class="flex space-x-[0.1rem] transform translate-y-[5px] z-index:1">
+          <button onclick="showTab('inicio')" id="tab-inicio"
+            class="tab-btn bg-gray-100 px-4 py-2 rounded-t-md hover:bg-green-700">💵 Dólares</button>
+          <button onclick="showTab('descargas')" id="tab-descargas"
+            class="tab-btn bg-gray-100 px-4 py-2 rounded-t-md hover:bg-gray-500">🏦 Economía</button>
+          <button onclick="showTab('escritorio')" id="tab-escritorio"
+            class="tab-btn bg-gray-100 px-4 py-2 rounded-t-md hover:bg-orange-400">📈 Finanzas</button>
+            <button onclick="showTab('escritorio')" id="tab-escritorio"
+            class="tab-btn bg-gray-100 px-4 py-2 rounded-t-md hover:bg-blue-700">🛢️ Commodities</button>
+            <button onclick="showTab('escritorio')" id="tab-escritorio"
+            class="tab-btn bg-gray-100 px-4 py-2 rounded-t-md hover:bg-blue-700 fas fa-plus"></button>
 
+        </div>
+
+      <!-- Información -->
+      <div class="bg-gray-100 rounded-[0.2rem] shadow-md p-6 mb-4 z-index:2">
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-6">
             <!-- Currency Cards -->
             <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
@@ -454,10 +471,11 @@
             </div>
 
         </div>
+     
         
 
         <!-- Gráfico -->
-        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+        <div class="bg-white rounded-[0.2rem] shadow-md p-6 mb-8">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-4 md:mb-0">Exchange Rate Trends</h2>
                 
@@ -492,7 +510,9 @@
                 <canvas id="exchangeRateChart"></canvas>
             </div>
         </div>
+       </div>
 
+       <!-- /////////////////////////////////////////CURRENCY CONVERTER///////////////////////////////////////// -->
         <div class="bg-white rounded-xl shadow-md p-6 mb-8">
             <h2 class="text-2xl font-semibold text-gray-800 mb-6">Currency Converter</h2>
             
