@@ -239,12 +239,7 @@
 
  <!-- Contenedor para el resto de la página -->
   <div class="max-w-5xl mx-auto px-4">
-
-
-
-
-
-    <div class="container mx-auto px-4 py-8 ">
+  <div class="container mx-auto px-4 py-8 ">
         <header class="mb-10">
           <div class="bg-white rounded-xl  flex flex-col md:flex-row items-center justify-center gap-10 p-8">
               <!--Imagen del gurise -->
@@ -263,97 +258,205 @@
         </header>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 mb-6">
             <!-- Currency Cards -->
-            <div class="currency-card bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out">
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
                     <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
                         <span class="text-blue-600 text-xl">$</span>
                     </div>
                     <div>
-                        <h3 class="font-semibold">USD</h3>
-                        <p class="text-sm text-gray-500">US Dollar</p>
+                        <h3 class="font-semibold">Dólar Oficial</h3>
+                        <div class="text-center bg-green-950 rounded-xl p-1">
+                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                            <span class="text-green-500">0,12%</span>
+                        </div>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
-                        <p class="text-gray-500 text-sm">Exchange Rate</p>
-                        <p class="text-2xl font-bold">1.00</p>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-2xl font-bold">$1.110</p>
                     </div>
-                    <div class="text-green-500 flex items-center">
-                        <i class="fas fa-caret-up mr-1"></i>
-                        <span>0.12%</span>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-2xl font-bold">$1.160</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <span class="text-blue-600 text-xl">$</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Dólar Blue</h3>
+                        <div class="text-center bg-green-950 rounded-xl p-1">
+                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                            <span class="text-green-500">0,12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-2xl font-bold">$1.110</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-2xl font-bold">$1.160</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <span class="text-blue-600 text-xl">$</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Dólar Tarjeta</h3>
+                        <div class="text-center bg-green-950 rounded-xl p-1">
+                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                            <span class="text-green-500">0,12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-2xl font-bold">$1.110</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-2xl font-bold">$1.160</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <span class="text-blue-600 text-xl">$</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Dólar MEP</h3>
+                        <div class="text-center bg-green-950 rounded-xl p-1">
+                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                            <span class="text-green-500">0,12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-2xl font-bold">$1.110</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-2xl font-bold">$1.160</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <span class="text-blue-600 text-xl">$</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Dólar CCL</h3>
+                        <div class="text-center bg-green-950 rounded-xl p-1">
+                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                            <span class="text-green-500">0,12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-2xl font-bold">$1.110</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-2xl font-bold">$1.160</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <span class="text-blue-600 text-xl">$</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Dólar Cripto</h3>
+                        <div class="text-center bg-green-950 rounded-xl p-1">
+                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                            <span class="text-green-500">0,12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-2xl font-bold">$1.110</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-2xl font-bold">$1.160</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <span class="text-blue-600 text-xl">$</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Dólar Mayorista</h3>
+                        <div class="text-center bg-green-950 rounded-xl p-1">
+                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                            <span class="text-green-500">0,12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-2xl font-bold">$1.110</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-2xl font-bold">$1.160</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <span class="text-blue-600 text-xl">$</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Dólar Futuro</h3>
+                        <div class="text-center bg-green-950 rounded-xl p-1">
+                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                            <span class="text-green-500">0,12%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-2xl font-bold">$1.110</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-2xl font-bold">$1.160</p>
                     </div>
                 </div>
             </div>
 
-            <div class="currency-card bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
-                        <span class="text-green-600 text-xl">€</span>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold">EUR</h3>
-                        <p class="text-sm text-gray-500">Euro</p>
-                    </div>
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-gray-500 text-sm">Exchange Rate</p>
-                        <p class="text-2xl font-bold">0.92</p>
-                    </div>
-                    <div class="text-red-500 flex items-center">
-                        <i class="fas fa-caret-down mr-1"></i>
-                        <span>0.25%</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="currency-card bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
-                        <span class="text-yellow-600 text-xl">£</span>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold">GBP</h3>
-                        <p class="text-sm text-gray-500">British Pound</p>
-                    </div>
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-gray-500 text-sm">Exchange Rate</p>
-                        <p class="text-2xl font-bold">0.79</p>
-                    </div>
-                    <div class="text-green-500 flex items-center">
-                        <i class="fas fa-caret-up mr-1"></i>
-                        <span>0.18%</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="currency-card bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-3">
-                        <span class="text-red-600 text-xl">¥</span>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold">JPY</h3>
-                        <p class="text-sm text-gray-500">Japanese Yen</p>
-                    </div>
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-gray-500 text-sm">Exchange Rate</p>
-                        <p class="text-2xl font-bold">151.43</p>
-                    </div>
-                    <div class="text-red-500 flex items-center">
-                        <i class="fas fa-caret-down mr-1"></i>
-                        <span>0.32%</span>
-                    </div>
-                </div>
-            </div>
         </div>
+        
 
+        <!-- Gráfico -->
         <div class="bg-white rounded-xl shadow-md p-6 mb-8">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-4 md:mb-0">Exchange Rate Trends</h2>
