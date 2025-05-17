@@ -258,7 +258,7 @@
         </header>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-6">
             <!-- Currency Cards -->
             <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
