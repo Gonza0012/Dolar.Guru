@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Exchange Dashboard</title>
+    <title>El Gurí de los verdes</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💸</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -178,6 +179,17 @@
       border-radius: 6px;
     }
 
+
+  @keyframes stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 28.28px 0;
+    }
+  }
+
+
     </style>
 </head>
 
@@ -259,7 +271,7 @@
 
         <!-- /////////////////////////////////////////ZONA PRINCIPAL///////////////////////////////////////// -->
         <!-- Pestañas -->
-        <div class="flex space-x-[0.1rem] transform translate-y-[5px] z-index:1">
+        <div class="flex space-x-[0.1rem] transform translate-y-[5px] relative" style="z-index:1;">
           <button onclick="showTab('inicio')" id="tab-inicio"
             class="tab-btn bg-gray-100 px-4 py-2 rounded-t-md hover:bg-green-700">💵 Dólares</button>
           <button onclick="showTab('descargas')" id="tab-descargas"
@@ -270,24 +282,21 @@
             class="tab-btn bg-gray-100 px-4 py-2 rounded-t-md hover:bg-blue-700">🛢️ Commodities</button>
             <button onclick="showTab('escritorio')" id="tab-escritorio"
             class="tab-btn bg-gray-100 px-4 py-2 rounded-t-md hover:bg-blue-700 fas fa-plus"></button>
-
         </div>
 
       <!-- Información -->
-      <div class="bg-gray-100 rounded-[0.2rem] shadow-md p-6 mb-4 z-index:2">
+      <div class="bg-gray-100 rounded-[0.2rem] shadow-md p-6 mb-4 relative"  style="z-index:2;">
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-6">
             <!-- Currency Cards -->
             <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                        <span class="text-blue-600 text-xl">$</span>
+                    <div class="rounded-xl bg-green-100 flex items-center justify-center mr-2 p-1">
+                        <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                        <span class="text-green-700">0,12%</span>
                     </div>
                     <div>
-                        <h3 class="font-semibold">Dólar Oficial</h3>
-                        <div class="text-center bg-green-950 rounded-xl p-1">
-                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
-                            <span class="text-green-500">0,12%</span>
-                        </div>
+                        <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Oficial</p>
+                        <p class="text-[0.7em] text-gray-500">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
@@ -303,15 +312,12 @@
             </div>
             <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                        <span class="text-blue-600 text-xl">$</span>
-                    </div>
+                    <div class="rounded-xl bg-red-100 flex items-center justify-center mr-2 p-1">
+                        <i class="text-red-500 fas fa-caret-up mr-1"></i>
+                        <span class="text-red-700">0,17%</span>                    </div>
                     <div>
-                        <h3 class="font-semibold">Dólar Blue</h3>
-                        <div class="text-center bg-green-950 rounded-xl p-1">
-                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
-                            <span class="text-green-500">0,12%</span>
-                        </div>
+                        <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Blue</p>
+                        <p class="text-[0.7em] text-gray-500">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
@@ -327,15 +333,13 @@
             </div>
             <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                        <span class="text-blue-600 text-xl">$</span>
+                    <div class="rounded-xl bg-green-100 flex items-center justify-center mr-2 p-1">
+                        <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                        <span class="text-green-700">0,12%</span>
                     </div>
                     <div>
-                        <h3 class="font-semibold">Dólar Tarjeta</h3>
-                        <div class="text-center bg-green-950 rounded-xl p-1">
-                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
-                            <span class="text-green-500">0,12%</span>
-                        </div>
+                        <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Tarjeta</p>
+                        <p class="text-[0.7em] text-gray-500">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
@@ -472,10 +476,30 @@
 
         </div>
      
-        
+        <!-- Barrita de carga -->
+        <div class="w-full max-w-xl mb-4 mx-auto">
+          <div class="w-full h-4 bg-gray-700 rounded overflow-hidden relative">
+            <div id="progress-bar" class="h-full animate-stripes" style="
+              width: 0%;
+              background-color: rgba(255,255,255,0.2);
+              background-image: repeating-linear-gradient(
+                45deg,
+                rgba(255,255,255,0.3) 0,
+                rgba(255,255,255,0.3) 10px,
+                transparent 10px,
+                transparent 20px
+              );
+              background-size: 28.28px 28.28px; /* 20px / sin(45°) to match the 45deg angle */
+              background-repeat: repeat;
+              animation: stripes 1s linear infinite;
+              transition: width 10s linear;
+            "></div>
+          </div>
+          <p class="text-center text-gray-300">Próxima actualización en unos segundos</p>
+        </div>
 
         <!-- Gráfico -->
-        <div class="bg-white rounded-[0.2rem] shadow-md p-6 mb-8">
+        <div class="bg-white rounded-[0.2rem] shadow-md p-6 mb-2">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-4 md:mb-0">Exchange Rate Trends</h2>
                 
@@ -733,7 +757,7 @@
         </div>
     </div>
 </div>
-
+<!-- ///////////////////////////////////////// PARA EL GRÁFICO, LO HIZO LA IA JUJÚ ///////////////////////////////////////// -->
     <script>
         // Sample data for the chart
         const timeframes = {
@@ -941,7 +965,7 @@
     });
     animate();
   </script>
-
+<!-- /////////////////////////////////////////SCRIPT PARA EL RICKROLL///////////////////////////////////////// -->
   <script>
       function openModal() {
         const iframe = document.getElementById('youtube-frame');
@@ -1022,6 +1046,30 @@
         document.getElementById('emoji-container').innerHTML = '';
       }
 
+</script>
+<!-- /////////////////////////////////////////SCRIPT PARA LA BARRITA QUE CARGA///////////////////////////////////////// -->
+<script>
+  const progressBar = document.getElementById("progress-bar");
+  const duration = 10000; // 10 segundos
+
+  function startProgressBar() {
+    // Reiniciar barra
+    progressBar.style.transition = "none";
+    progressBar.style.width = "0%";
+
+    // Forzar reflow para reiniciar animación
+    void progressBar.offsetWidth;
+
+    // Aplicar animación
+    progressBar.style.transition = `width ${duration}ms linear`;
+    progressBar.style.width = "100%";
+  }
+
+  // Iniciar por primera vez
+  startProgressBar();
+
+  // Ejemplo: reiniciarlo cada 12 segundos
+  setInterval(startProgressBar, duration );
 </script>
 
 </body>
