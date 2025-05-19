@@ -10,152 +10,163 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-      .chart-container {
-          position: relative;
-          height: 400px;
-          width: 100%;
-      }
-      .currency-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      }
-      .guru-image:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      }
-      .timeframe-btn.active {
-          background-color: #3b82f6;
-          color: white;
-      }
-      .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: white;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-          border-radius: 0.5rem;
-      }
-      .dropdown:hover .dropdown-content {
-          display: block;
-      }
-      .news-card:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      }
-      .news-thumbnail {
-          height: 180px;
-          object-fit: cover;
-      }
-      .ad-sidebar {
-          position: fixed;
-          top: 0;
-          height: 100vh;
-          width: 160px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 20px;
-          background-color: #f8fafc;
-          border-right: 1px solid #e2e8f0;
-          z-index: 10;
-      }
-      .ad-sidebar.right {
-          right: 0;
-          border-right: none;
-          border-left: 1px solid #e2e8f0;
-      }
-      .ad-placeholder {
-          background-color: #e2e8f0;
-          border: 1px dashed #94a3b8;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #64748b;
-          font-weight: 500;
-      }
-      @media (max-width: 1280px) {
-          .ad-sidebar {
-              display: none;
-          }
-      }
+    .chart-container {
+        position: relative;
+        height: 400px;
+        width: 100%;
+    }
 
-        h1 {
-          font-size: 50px;
-        }
-        h1 span {
-          color: #acacac;
-          font-size: 32px;
-        }
+    .currency-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
 
-.carousel-container {
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      //background: #111;
-      padding: 0.4rem 0;
-      cursor: grab;
+    .guru-image:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeframe-btn.active {
+        background-color: #3b82f6;
+        color: white;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 0.5rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .news-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-thumbnail {
+        height: 180px;
+        object-fit: cover;
+    }
+    .ad-sidebar {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f8fafc;
+        border-right: 1px solid #e2e8f0;
+        z-index: 10;
+    }
+
+    .ad-sidebar.right {
+        right: 0;
+        border-right: none;
+        border-left: 1px solid #e2e8f0;
+    }
+
+    .ad-placeholder {
+        background-color: #e2e8f0;
+        border: 1px dashed #94a3b8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #64748b;
+        font-weight: 500;
+    }
+
+    @media (max-width: 1280px) {
+        .ad-sidebar {
+            display: none;
+        }
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h1 span {
+        color: #acacac;
+        font-size: 32px;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        //background: #111;
+        padding: 0.4rem 0;
+        cursor: grab;
     }
 
     .carousel-track {
-      display: flex;
-      gap: 1rem;
-      will-change: transform;
+        display: flex;
+        gap: 1rem;
+        will-change: transform;
     }
 
     .card {
-      background: white;
-      color: black;
-      border-radius: 8px;
-      padding: 1rem;
-      min-width: 200px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      flex-shrink: 0;
+        background: white;
+        color: black;
+        border-radius: 8px;
+        padding: 1rem;
+        min-width: 200px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        flex-shrink: 0;
     }
 
     .value {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
     }
 
     .change {
-      font-weight: bold;
-      margin-top: 0.25rem;
-      color: green;
+        font-weight: bold;
+        margin-top: 0.25rem;
+        color: green;
     }
 
     .dragging {
-      cursor: grabbing;
-      user-select: none;
+        cursor: grabbing;
+        user-select: none;
     }
 
     .modal-backdrop {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: none; /* Oculto por defecto */
-      align-items: center;
-      justify-content: center;
-      z-index: 9998;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none; /* Oculto por defecto */
+        align-items: center;
+        justify-content: center;
+        z-index: 9998;
     }
 
     /* Caja del modal */
     .modal {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 8px;
-      position: relative;
-      width: 90%;
-      max-width: 800px;
-      aspect-ratio: 16 / 9;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        aspect-ratio: 16 / 9;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
 
     /* Botón de cerrar */
-      .modal-close {
+    .modal-close {
         position: absolute;
         top: -16px;         /* Lo sube un poco */
         right: -16px;       /* Lo empuja fuera del borde para evitar superposición */
@@ -170,37 +181,34 @@
         display: flex;
         align-items: center;
         justify-content: center;
-      }
+    }
 
     .modal iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 6px;
     }
 
-
-  @keyframes stripes {
-    0% {
-      background-position: 0 0;
+    @keyframes stripes {
+        0% {
+        background-position: 0 0;
+        }
+        100% {
+        background-position: 28.28px 0;
+        }
     }
-    100% {
-      background-position: 28.28px 0;
-    }
-  }
-
-
     </style>
 </head>
 
 <body class="bg-gray-50" style="background-color: #e4eaf1;
-        background-image: repeating-linear-gradient(
-          45deg, 
-          rgba(28, 58, 92,0.05) 0, 
-          rgba(28, 100, 92,0.05) 1px, 
-          transparent 50px, 
-          transparent 20px);
-          background-attachment: fixed">
+                                background-image: repeating-linear-gradient(
+                                45deg, 
+                                rgba(28, 58, 92,0.05) 0, 
+                                rgba(28, 100, 92,0.05) 1px, 
+                                transparent 50px, 
+                                transparent 20px);
+                                background-attachment: fixed">
 
     <!-- Left Sidebar Ad -->
     <div class="ad-sidebar left">
