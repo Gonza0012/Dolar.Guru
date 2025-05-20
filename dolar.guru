@@ -198,6 +198,20 @@
         background-position: 28.28px 0;
         }
     }
+
+    .highlight {
+      animation: flash 0.8s ease-in-out;
+    }
+
+    @keyframes flash {
+      0% {
+        background-color: rgba(255, 255, 0, 0.4);
+      }
+      100% {
+        background-color: transparent;
+      }
+    }
+
     </style>
 </head>
 
@@ -304,17 +318,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Oficial</p>
-                        <p class="text-[0.7em] text-gray-500" id="oficial-t">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="oficial-t">...</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-[1.3rem] font-bold" id="oficial-c">...</p>
+                        <p class="text-[1.2rem] font-bold" id="oficial-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-[1.3rem] font-bold" id="oficial-v">...</p>
+                        <p class="text-[1.2rem] font-bold" id="oficial-v">...</p>
                     </div>
                 </div>
             </div>
@@ -326,17 +340,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Blue</p>
-                        <p class="text-[0.7em] text-gray-500" id="blue-t">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="blue-t">...</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-[1.3rem] font-bold" id="blue-c">...</p>
+                        <p class="text-[1.2rem] font-bold" id="blue-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-[1.3rem] font-bold" id="blue-v">...</p>
+                        <p class="text-[1.2rem] font-bold" id="blue-v">...</p>
                     </div>
                 </div>
             </div>
@@ -348,17 +362,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Bolsa</p>
-                        <p class="text-[0.7em] text-gray-500"  id="bolsa-t">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500"  id="bolsa-t">...</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-[1.3rem] font-bold" id="bolsa-c">...</p>
+                        <p class="text-[1.2rem] font-bold" id="bolsa-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-[1.3rem] font-bold" id="bolsa-v">...</p>
+                        <p class="text-[1.2rem] font-bold" id="bolsa-v">...</p>
                     </div>
                 </div>
             </div>
@@ -370,17 +384,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar CCL</p>
-                        <p class="text-[0.7em] text-gray-500" id="contadoconliqui-t">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="contadoconliqui-t">...</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-[1.3rem] font-bold" id="contadoconliqui-c">...</p>
+                        <p class="text-[1.2rem] font-bold" id="contadoconliqui-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-[1.3rem] font-bold" id="contadoconliqui-v">...</p>
+                        <p class="text-[1.2rem] font-bold" id="contadoconliqui-v">...</p>
                     </div>
                 </div>
             </div>
@@ -392,17 +406,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Tarjeta</p>
-                        <p class="text-[0.7em] text-gray-500" id="tarjeta-t">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="tarjeta-t">...</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-[1.3rem] font-bold" id="tarjeta-c">...</p>
+                        <p class="text-[1.2rem] font-bold" id="tarjeta-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-[1.3rem] font-bold" id="tarjeta-v">...</p>
+                        <p class="text-[1.2rem] font-bold" id="tarjeta-v">...</p>
                     </div>
                 </div>
             </div>
@@ -414,17 +428,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Mayorista</p>
-                        <p class="text-[0.7em] text-gray-500" id="mayorista-t">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="mayorista-t">...</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-[1.3rem] font-bold" id="mayorista-c">...</p>
+                        <p class="text-[1.2rem] font-bold" id="mayorista-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-[1.3rem] font-bold" id="mayorista-v">...</p>
+                        <p class="text-[1.2rem] font-bold" id="mayorista-v">...</p>
                     </div>
                 </div>
             </div>
@@ -436,17 +450,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Cripto</p>
-                        <p class="text-[0.7em] text-gray-500" id="cripto-t">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="cripto-t">...</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-[1.3rem] font-bold" id="cripto-c">...</p>
+                        <p class="text-[1.2rem] font-bold" id="cripto-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-[1.3rem] font-bold" id="cripto-v">...</p>
+                        <p class="text-[1.2rem] font-bold" id="cripto-v">...</p>
                     </div>
                 </div>
             </div>
@@ -458,17 +472,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Futuro</p>
-                        <p class="text-[0.7em] text-gray-500" id="futuro-t">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="futuro-t">...</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-[1.3rem] font-bold" id="futuro-c">...</p>
+                        <p class="text-[1.2rem] font-bold" id="futuro-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-[1.3rem] font-bold" id="futuro-v">...</p>
+                        <p class="text-[1.2rem] font-bold" id="futuro-v">...</p>
                     </div>
                 </div>
             </div>
@@ -1049,7 +1063,7 @@
 <!-- /////////////////////////////////////////SCRIPT PARA LA BARRITA QUE CARGA///////////////////////////////////////// -->
 <script>
   const progressBar = document.getElementById("progress-bar");
-  const duration = 300000; // 10 segundos
+  const duration = 300000; // 5 minutos
 
   function startProgressBar() {
     // Reiniciar barra
@@ -1091,7 +1105,7 @@
     const diffMin = Math.floor(diffMs / 60000);
     const diffHs = Math.floor(diffMin / 60);
 
-    if (diffMin < 1) return "Hace menos de 1 minuto";
+    if (diffMin < 1) return "< 1 minuto";
     if (diffMin < 60) return `Hace ${diffMin} minuto${diffMin === 1 ? "" : "s"}`;
     return `Hace ${diffHs} hora${diffHs === 1 ? "" : "s"}`;
   }
@@ -1105,14 +1119,26 @@
           const ventaEl = document.getElementById(`${id}-v`);
           const tiempoEl = document.getElementById(`${id}-t`);
 
-          if (compraEl) compraEl.textContent = `$${data.compra.toFixed(1)}`;
-          if (ventaEl) ventaEl.textContent = `$${data.venta.toFixed(1)}`;
+          if (compraEl) {
+            compraEl.textContent = `$${data.compra.toLocaleString("es-AR", { minimumFractionDigits: 1, maximumFractionDigits: 1 })}`;
+            compraEl.classList.remove("highlight");
+            void compraEl.offsetWidth; // Forzar reflow para reiniciar animación
+            compraEl.classList.add("highlight");
+          }
+
+          if (ventaEl) {
+            ventaEl.textContent = `$${data.venta.toLocaleString("es-AR", { minimumFractionDigits: 1, maximumFractionDigits: 1 })}`;
+            ventaEl.classList.remove("highlight");
+            void ventaEl.offsetWidth;
+            ventaEl.classList.add("highlight");
+          }
 
           if (tiempoEl) {
             const fecha = new Date();
             tiempoEl.dataset.timestamp = fecha.getTime();
             tiempoEl.textContent = tiempoRelativo(fecha);
           }
+
         })
         .catch(err => {
           console.error(`Error al obtener el dólar ${nombre}:`, err);
