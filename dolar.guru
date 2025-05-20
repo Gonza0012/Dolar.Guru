@@ -304,17 +304,17 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Oficial</p>
-                        <p class="text-[0.7em] text-gray-500">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="oficial-t">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-2xl font-bold">$1.110</p>
+                        <p class="text-[1.3rem] font-bold" id="oficial-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-2xl font-bold">$1.160</p>
+                        <p class="text-[1.3rem] font-bold" id="oficial-v">...</p>
                     </div>
                 </div>
             </div>
@@ -322,20 +322,65 @@
                 <div class="flex items-center mb-4">
                     <div class="rounded-xl bg-red-100 flex items-center justify-center mr-2 p-1">
                         <i class="text-red-500 fas fa-caret-up mr-1"></i>
-                        <span class="text-red-700">0,17%</span>                    </div>
+                        <span class="text-red-700">0,17%</span>
+                    </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Blue</p>
-                        <p class="text-[0.7em] text-gray-500">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="blue-t">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-2xl font-bold">$1.110</p>
+                        <p class="text-[1.3rem] font-bold" id="blue-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-2xl font-bold">$1.160</p>
+                        <p class="text-[1.3rem] font-bold" id="blue-v">...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="rounded-xl bg-green-100 flex items-center justify-center mr-2 p-1">
+                        <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                        <span class="text-green-700">0,12%</span>
+                    </div>
+                    <div>
+                        <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Bolsa</p>
+                        <p class="text-[0.7em] text-gray-500"  id="bolsa-t">Hace 45 minutos</p>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-[1.3rem] font-bold" id="bolsa-c">...</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-[1.3rem] font-bold" id="bolsa-v">...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
+                <div class="flex items-center mb-4">
+                    <div class="rounded-xl bg-green-100 flex items-center justify-center mr-2 p-1">
+                        <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                        <span class="text-green-700">0,12%</span>
+                    </div>
+                    <div>
+                        <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar CCL</p>
+                        <p class="text-[0.7em] text-gray-500" id="contadoconliqui-t">Hace 45 minutos</p>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-gray-500 text-sm">Compra</p>
+                        <p class="text-[1.3rem] font-bold" id="contadoconliqui-c">...</p>
+                    </div>
+                    <div>
+                    <p class="text-gray-500 text-sm">Venta</p>
+                        <p class="text-[1.3rem] font-bold" id="contadoconliqui-v">...</p>
                     </div>
                 </div>
             </div>
@@ -347,137 +392,83 @@
                     </div>
                     <div>
                         <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Tarjeta</p>
-                        <p class="text-[0.7em] text-gray-500">Hace 45 minutos</p>
+                        <p class="text-[0.7em] text-gray-500" id="tarjeta-t">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-2xl font-bold">$1.110</p>
+                        <p class="text-[1.3rem] font-bold" id="tarjeta-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-2xl font-bold">$1.160</p>
+                        <p class="text-[1.3rem] font-bold" id="tarjeta-v">...</p>
                     </div>
                 </div>
             </div>
             <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                        <span class="text-blue-600 text-xl">$</span>
+                    <div class="rounded-xl bg-green-100 flex items-center justify-center mr-2 p-1">
+                        <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                        <span class="text-green-700">0,12%</span>
                     </div>
                     <div>
-                        <h3 class="font-semibold">Dólar MEP</h3>
-                        <div class="text-center bg-green-950 rounded-xl p-1">
-                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
-                            <span class="text-green-500">0,12%</span>
-                        </div>
+                        <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Mayorista</p>
+                        <p class="text-[0.7em] text-gray-500" id="mayorista-t">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-2xl font-bold">$1.110</p>
+                        <p class="text-[1.3rem] font-bold" id="mayorista-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-2xl font-bold">$1.160</p>
+                        <p class="text-[1.3rem] font-bold" id="mayorista-v">...</p>
                     </div>
                 </div>
             </div>
             <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                        <span class="text-blue-600 text-xl">$</span>
+                    <div class="rounded-xl bg-green-100 flex items-center justify-center mr-2 p-1">
+                        <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                        <span class="text-green-700">0,12%</span>
                     </div>
                     <div>
-                        <h3 class="font-semibold">Dólar CCL</h3>
-                        <div class="text-center bg-green-950 rounded-xl p-1">
-                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
-                            <span class="text-green-500">0,12%</span>
-                        </div>
+                        <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Cripto</p>
+                        <p class="text-[0.7em] text-gray-500" id="cripto-t">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-2xl font-bold">$1.110</p>
+                        <p class="text-[1.3rem] font-bold" id="cripto-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-2xl font-bold">$1.160</p>
+                        <p class="text-[1.3rem] font-bold" id="cripto-v">...</p>
                     </div>
                 </div>
             </div>
             <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                        <span class="text-blue-600 text-xl">$</span>
+                    <div class="rounded-xl bg-green-100 flex items-center justify-center mr-2 p-1">
+                        <i class="text-green-500 fas fa-caret-down mr-1"></i>
+                        <span class="text-green-700">0,12%</span>
                     </div>
                     <div>
-                        <h3 class="font-semibold">Dólar Cripto</h3>
-                        <div class="text-center bg-green-950 rounded-xl p-1">
-                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
-                            <span class="text-green-500">0,12%</span>
-                        </div>
+                        <p class="text-[1.1em] md:text-[1.0em] lg:text-[1.1em] font-semibold">Dólar Futuro</p>
+                        <p class="text-[0.7em] text-gray-500" id="futuro-t">Hace 45 minutos</p>
                     </div>
                 </div>
                 <div class="flex justify-between items-end">
                     <div>
                         <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-2xl font-bold">$1.110</p>
+                        <p class="text-[1.3rem] font-bold" id="futuro-c">...</p>
                     </div>
                     <div>
                     <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-2xl font-bold">$1.160</p>
-                    </div>
-                </div>
-            </div>
-            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                        <span class="text-blue-600 text-xl">$</span>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold">Dólar Mayorista</h3>
-                        <div class="text-center bg-green-950 rounded-xl p-1">
-                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
-                            <span class="text-green-500">0,12%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-2xl font-bold">$1.110</p>
-                    </div>
-                    <div>
-                    <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-2xl font-bold">$1.160</p>
-                    </div>
-                </div>
-            </div>
-            <div class="currency-card bg-white rounded-[0.2rem] shadow-md p-6 transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                        <span class="text-blue-600 text-xl">$</span>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold">Dólar Futuro</h3>
-                        <div class="text-center bg-green-950 rounded-xl p-1">
-                            <i class="text-green-500 fas fa-caret-down mr-1"></i>
-                            <span class="text-green-500">0,12%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-gray-500 text-sm">Compra</p>
-                        <p class="text-2xl font-bold">$1.110</p>
-                    </div>
-                    <div>
-                    <p class="text-gray-500 text-sm">Venta</p>
-                        <p class="text-2xl font-bold">$1.160</p>
+                        <p class="text-[1.3rem] font-bold" id="futuro-v">...</p>
                     </div>
                 </div>
             </div>
@@ -1058,7 +1049,7 @@
 <!-- /////////////////////////////////////////SCRIPT PARA LA BARRITA QUE CARGA///////////////////////////////////////// -->
 <script>
   const progressBar = document.getElementById("progress-bar");
-  const duration = 10000; // 10 segundos
+  const duration = 300000; // 10 segundos
 
   function startProgressBar() {
     // Reiniciar barra
@@ -1076,10 +1067,75 @@
   // Iniciar por primera vez
   startProgressBar();
 
-  // Ejemplo: reiniciarlo cada 12 segundos
+  //Reiniciar barrita
   setInterval(startProgressBar, duration );
+  setInterval(actualizarCotizaciones, duration );
+</script>
+
+<!-- /////////////////////////////////////////SCRIPT PARA OBTENER COTIZACIONES DEL DÓLAR - FUENTE: DOLAR API///////////////////////////////////////// -->
+<script>
+  const tipos = [
+    { id: "oficial", nombre: "oficial" },
+    { id: "blue", nombre: "blue" },
+    { id: "bolsa", nombre: "bolsa" },
+    { id: "contadoconliqui", nombre: "contadoconliqui" },
+    { id: "tarjeta", nombre: "tarjeta" },
+    { id: "mayorista", nombre: "mayorista" },
+    { id: "cripto", nombre: "cripto" },
+    //{ id: "futuro", nombre: "futuro" }
+  ];
+
+  function tiempoRelativo(fecha) {
+    const ahora = new Date();
+    const diffMs = ahora - fecha;
+    const diffMin = Math.floor(diffMs / 60000);
+    const diffHs = Math.floor(diffMin / 60);
+
+    if (diffMin < 1) return "Hace menos de 1 minuto";
+    if (diffMin < 60) return `Hace ${diffMin} minuto${diffMin === 1 ? "" : "s"}`;
+    return `Hace ${diffHs} hora${diffHs === 1 ? "" : "s"}`;
+  }
+
+  function actualizarCotizaciones() {
+    tipos.forEach(({ id, nombre }) => {
+      fetch(`https://dolarapi.com/v1/dolares/${nombre}`)
+        .then(res => res.json())
+        .then(data => {
+          const compraEl = document.getElementById(`${id}-c`);
+          const ventaEl = document.getElementById(`${id}-v`);
+          const tiempoEl = document.getElementById(`${id}-t`);
+
+          if (compraEl) compraEl.textContent = `$${data.compra.toFixed(1)}`;
+          if (ventaEl) ventaEl.textContent = `$${data.venta.toFixed(1)}`;
+
+          if (tiempoEl) {
+            const fecha = new Date();
+            tiempoEl.dataset.timestamp = fecha.getTime();
+            tiempoEl.textContent = tiempoRelativo(fecha);
+          }
+        })
+        .catch(err => {
+          console.error(`Error al obtener el dólar ${nombre}:`, err);
+        });
+    });
+  }
+
+  // ⏱ Actualizar los textos de tiempo periódicamente
+  setInterval(() => {
+    const tiempoEls = document.querySelectorAll("[id$='-t']");
+    tiempoEls.forEach(el => {
+      const timestamp = el.dataset.timestamp;
+      if (timestamp) {
+        const fecha = new Date(parseInt(timestamp));
+        el.textContent = tiempoRelativo(fecha);
+      }
+    });
+  }, 30000);
+
+  // Llamar manualmente la primera vez
+  actualizarCotizaciones();
+
 </script>
 
 </body>
-
 </html>
